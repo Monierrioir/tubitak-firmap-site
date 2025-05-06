@@ -1,83 +1,94 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Roboto', sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f9;
+  color: #222;
 }
 
-header {
-  background: #1a2a3a;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.logo-area {
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  background-color: #1a2a3a;
+  color: white;
+  padding: 15px 30px;
 }
 
 .logo {
-  width: 100px;
-  margin-bottom: 10px;
+  height: 40px;
+  margin-right: 10px;
 }
 
-h1 {
-  font-size: 32px;
+.navbar-left {
+  display: flex;
+  align-items: center;
 }
 
-.subtext {
+.project-name {
   font-size: 18px;
-  margin-top: 10px;
-  color: #ccc;
-}
-
-.cta-button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 14px 30px;
-  background-color: #ff4d4d;
-  color: white;
   font-weight: bold;
+}
+
+.navbar-right .nav-button {
+  color: white;
   text-decoration: none;
-  border-radius: 8px;
-  transition: background 0.3s ease;
+  background-color: #e63946;
+  padding: 8px 16px;
+  border-radius: 6px;
 }
 
-.cta-button:hover {
-  background-color: #cc3d3d;
+.navbar-right .nav-button:hover {
+  background-color: #c5303c;
 }
 
-section.info {
-  max-width: 800px;
+.main-content {
+  max-width: 900px;
   margin: 40px auto;
   padding: 20px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-section.info h2 {
-  margin-bottom: 15px;
+.intro-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+.intro-box h1 {
   font-size: 24px;
+  margin-bottom: 20px;
   color: #1a2a3a;
 }
 
-section.info p {
+.intro-box p {
+  margin-bottom: 12px;
   line-height: 1.6;
-  margin-bottom: 10px;
 }
 
-footer {
-  background-color: #eee;
-  padding: 15px;
-  text-align: center;
-  font-size: 14px;
-  color: #666;
+.description {
+  margin-top: 20px;
+  font-size: 16px;
 }
+
+.main-button {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: #e63946;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.main-button:hover {
+  background-color: #c5303c;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #eee;
+  font-size: 14px;
+}
+
