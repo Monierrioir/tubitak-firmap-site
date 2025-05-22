@@ -1,3 +1,63 @@
-<h1>Yangın Haritası</h1>
-<p>Burada interaktif harita görüntülenecek.</p>
-<iframe src="https://your-map-url.com" width="100%" height="500px" style="border: 1px solid #ccc;"></iframe>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haritalar | TÜBİTAK 2209-A Projesi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-sA+e2siMVXlPCi0jFi3QiaL7S4ZZm+M0ZocTgGI0m38="
+    crossorigin=""
+  />
+  <style>
+    #map {
+      height: 500px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="img/tubitak-logo.png" alt="TÜBİTAK Logo" class="logo" />
+      <span class="site-title">TÜBİTAK 2209-A Projesi</span>
+    </div>
+    <nav class="navbar-right">
+      <a href="index.html" class="nav-button">Anasayfa</a>
+      <a href="hakkimizda.html" class="nav-button">Hakkımızda</a>
+      <a href="haritalar.html" class="nav-button">Haritalar</a>
+      <a href="blog.html" class="nav-button">Blog</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>İnteraktif Yangın Haritası</h1>
+    <p>Harita üzerinden yangın bölgelerini inceleyebilirsiniz.</p>
+    <div id="map"></div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 FİRMAP Projesi – TÜBİTAK 2209-A</p>
+  </footer>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1jGD2cQv7vW8dA/bn/FO5hA1Js2gM2kMqV+38nCU="
+    crossorigin=""
+  ></script>
+  <script>
+    var map = L.map('map').setView([37.9, 29.1], 7); // Muğla merkezli görünüm
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '© OpenStreetMap katkıcıları'
+    }).addTo(map);
+
+    // Örnek yangın noktası
+    L.marker([37.0, 29.0]).addTo(map).bindPopup('📍 Muğla - Yangın Bildirimi');
+  </script>
+</body>
+</html>
