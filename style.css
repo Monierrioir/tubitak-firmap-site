@@ -119,3 +119,27 @@ h1 {
   font-weight: 600;
   color: #1a2a3a;
 }
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+  .navbar-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-button {
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero-content a.main-button {
+    margin-bottom: 10px;
+  }
+}
