@@ -147,4 +147,43 @@ h1 {
     text-align: center;
   }
 }
+/* Hamburger ikon (mobil görünüm) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Menü görünürlüğü */
+#nav-menu {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  #nav-menu {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    margin-top: 10px;
+  }
+
+  #nav-menu.show {
+    display: flex;
+  }
+
+  .nav-button {
+    width: 100%;
+    text-align: center;
+  }
+}
 
