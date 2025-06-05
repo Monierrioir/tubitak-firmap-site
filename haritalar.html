@@ -25,7 +25,8 @@
       <img src="img/tubitak-logo.png" alt="TÜBİTAK Logo" class="logo" />
       <span class="site-title">TÜBİTAK 2209-A Projesi</span>
     </div>
-    <nav class="navbar-right">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav class="navbar-right" id="nav-menu">
       <a href="index.html" class="nav-button">Anasayfa</a>
       <a href="hakkimizda.html" class="nav-button">Hakkımızda</a>
       <a href="haritalar.html" class="nav-button">Haritalar</a>
@@ -43,13 +44,14 @@
     <p>&copy; 2025 FİRMAP Projesi – TÜBİTAK 2209-A</p>
   </footer>
 
+  <!-- Leaflet.js Harita -->
   <script
     src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-o9N1jGD2cQv7vW8dA/bn/FO5hA1Js2gM2kMqV+38nCU="
     crossorigin=""
   ></script>
   <script>
-    var map = L.map('map').setView([37.9, 29.1], 7); // Muğla merkezli görünüm
+    var map = L.map('map').setView([37.9, 29.1], 7); // Muğla bölgesi
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
@@ -58,6 +60,14 @@
 
     // Örnek yangın noktası
     L.marker([37.0, 29.0]).addTo(map).bindPopup('📍 Muğla - Yangın Bildirimi');
+  </script>
+
+  <!-- Menü Aç/Kapat -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-menu");
+      nav.classList.toggle("show");
+    }
   </script>
 </body>
 </html>
