@@ -9,11 +9,15 @@
 <body>
   <header class="navbar">
     <div class="navbar-left">
-      <img src="img/tubitak-logo.png" alt="TÜBİTAK Logo" class="logo">
+      <img src="img/tubitak-logo.png" alt="TÜBİTAK Logo" class="logo" />
       <span class="site-title">TÜBİTAK 2209-A Projesi</span>
     </div>
-    <nav class="navbar-right">
-      <a href="harita.html" class="nav-button">Haritaya Git</a>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav class="navbar-right" id="nav-menu">
+      <a href="index.html" class="nav-button">Anasayfa</a>
+      <a href="hakkimizda.html" class="nav-button">Hakkımızda</a>
+      <a href="haritalar.html" class="nav-button">Haritalar</a>
+      <a href="blog.html" class="nav-button">Blog</a>
     </nav>
   </header>
 
@@ -21,7 +25,7 @@
     <div class="hero-content">
       <h1>Yangın Verilerinin Haritalandırılması ve Görselleştirilmesi</h1>
       <p>Türkiye'deki orman yangınlarının uzamsal analizine odaklanan TÜBİTAK destekli interaktif web platformu.</p>
-      <a href="harita.html" class="main-button">Yangın Haritasını Aç</a>
+      <a href="haritalar.html" class="main-button">Yangın Haritasını Aç</a>
       <br><br>
       <a href="hakkimizda.html" class="main-button" style="background-color: #444;">Hakkımızda</a>
     </div>
@@ -30,6 +34,13 @@
   <footer class="footer">
     <p>&copy; 2025 FİRMAP Projesi – TÜBİTAK 2209-A</p>
   </footer>
+
+  <!-- Menü Aç/Kapat -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-menu");
+      nav.classList.toggle("show");
+    }
+  </script>
 </body>
 </html>
-
