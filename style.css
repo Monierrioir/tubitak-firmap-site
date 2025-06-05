@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 
-/* Üst Menü */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -14,9 +14,12 @@ body {
   background-color: #1a2a3a;
   color: white;
   padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.navbar-content {
+.navbar-left {
   display: flex;
   align-items: center;
 }
@@ -31,6 +34,20 @@ body {
   font-weight: bold;
 }
 
+/* Hamburger Menü */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Menü Bağlantıları */
+.navbar-right {
+  display: flex;
+  gap: 10px;
+}
+
 .nav-button {
   background-color: #e63946;
   color: white;
@@ -43,7 +60,7 @@ body {
   background-color: #c5303c;
 }
 
-/* Ana İçerik */
+/* Sayfa İçeriği */
 .container {
   max-width: 900px;
   margin: 50px auto;
@@ -59,11 +76,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-.info p {
-  margin: 8px 0;
-  font-size: 16px;
-}
-
 .description {
   margin-top: 20px;
   font-size: 17px;
@@ -71,30 +83,7 @@ h1 {
   color: #444;
 }
 
-.main-button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 28px;
-  background-color: #e63946;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  font-size: 16px;
-}
-
-.main-button:hover {
-  background-color: #c5303c;
-}
-
-/* Alt Bilgi */
-.footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #eee;
-  font-size: 14px;
-  margin-top: 50px;
-}
+/* Takım Üyesi Kartları */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -119,65 +108,35 @@ h1 {
   font-weight: 600;
   color: #1a2a3a;
 }
-/* Responsive navbar */
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+/* Responsive Menü */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-  }
-
-  .navbar-left {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .navbar-right {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
-
-  .nav-button {
-    width: 100%;
-    text-align: center;
-  }
-}
-/* Hamburger ikon (mobil görünüm) */
-.hamburger {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: white;
-}
-
-/* Menü görünürlüğü */
-#nav-menu {
-  display: flex;
-  gap: 10px;
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-wrap: wrap;
-  }
-
   .hamburger {
     display: block;
   }
 
-  #nav-menu {
-    flex-direction: column;
-    width: 100%;
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-right {
     display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
     margin-top: 10px;
   }
 
-  #nav-menu.show {
+  .navbar-right.show {
     display: flex;
   }
 
@@ -186,4 +145,3 @@ h1 {
     text-align: center;
   }
 }
-
