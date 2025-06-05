@@ -173,5 +173,16 @@ h1 {
   font-size: 16px;
   margin-bottom: 6px;
 }
+.highlight-box {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 16px 20px;
+  margin-top: 25px;
+  border-radius: 8px;
+  color: #856404;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 
 
