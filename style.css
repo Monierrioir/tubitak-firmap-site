@@ -49,15 +49,24 @@ body {
 }
 
 .nav-button {
-  background-color: #e63946;
+  display: inline-block;
+  background-color: #e53939;
   color: white;
-  text-decoration: none;
   padding: 10px 20px;
-  border-radius: 6px;
+  margin: 0 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
 }
 
 .nav-button:hover {
-  background-color: #c5303c;
+  background-color: #c62828;
+}
+
+.nav-button:visited {
+  color: white;
 }
 
 /* Sayfa İçeriği */
