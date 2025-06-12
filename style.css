@@ -255,3 +255,10 @@ h1 {
 .close:hover {
   color: #e60000;
 }
+.blog-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
