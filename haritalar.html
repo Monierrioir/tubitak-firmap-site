@@ -1,133 +1,31 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haritalar | TÜBİTAK 2209-A Projesi</title>
-  <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-sA+e2siMVXlPCi0jFi3QiaL7S4ZZm+M0ZocTgGI0m38="
-    crossorigin=""
-  />
-  <style>
-    #map {
-      height: 500px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
+<main class="container">
+  <h1>Yangın Haritaları Galerisi</h1>
+  <p>2025 TÜBİTAK 2209-A projesi kapsamında hazırlanan farklı interaktif haritaları aşağıdan inceleyebilirsiniz.</p>
 
-    .map-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .map-item {
-      text-align: center;
-      background-color: #fff;
-      padding: 16px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      transition: transform 0.2s;
-    }
-
-    .map-item:hover {
-      transform: scale(1.03);
-    }
-
-    .map-item img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-
-    .map-item p {
-      font-weight: bold;
-      color: #1a2a3a;
-    }
-  </style>
-</head>
-<body>
-  <header class="navbar">
-    <div class="navbar-left">
-      <img src="img/tubitak-logo.png" alt="TÜBİTAK Logo" class="logo" />
-      <span class="site-title">TÜBİTAK 2209-A Projesi</span>
+  <div class="map-gallery">
+    <div class="map-card">
+      <a href="mugla_yangin_heatmap_2012_2022_interaktif_renkli_legend.html" target="_blank">
+        <img src="img/thumb_heatmap.png" alt="Heatmap 2012–2022" />
+        <h3>2012–2022 Isı Yoğunluk Haritası</h3>
+      </a>
     </div>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <nav class="navbar-right" id="nav-menu">
-      <a href="index.html" class="nav-button">Anasayfa</a>
-      <a href="hakkimizda.html" class="nav-button">Hakkımızda</a>
-      <a href="haritalar.html" class="nav-button">Haritalar</a>
-      <a href="blog.html" class="nav-button">Blog</a>
-    </nav>
-  </header>
-
-  <main class="container">
-    <h1>İnteraktif Yangın Haritası</h1>
-    <p>Harita üzerinden yangın bölgelerini canlı olarak inceleyebilirsiniz.</p>
-    <div id="map"></div>
-
-    <h2 style="margin-top: 60px;">Yangın Haritaları Galerisi</h2>
-    <p>Aşağıdaki haritalara tıklayarak detaylı görselleştirmeleri inceleyebilirsiniz:</p>
-
-    <div class="map-gallery">
-      <div class="map-item">
-        <a href="mugla_yangin_intense_animation.html" target="_blank">
-          <img src="img/heatmap-preview1.png" alt="Yoğunluk Haritası">
-          <p>🔥 2012–2022 Yangın Yoğunluk Haritası</p>
-        </a>
-      </div>
-      <div class="map-item">
-        <a href="leaflet_harita.html" target="_blank">
-          <img src="img/leaflet-preview.png" alt="Canlı Harita">
-          <p>🛰️ Canlı Harita Görüntüleme</p>
-        </a>
-      </div>
-      <div class="map-item">
-        <a href="raster_harita.html" target="_blank">
-          <img src="img/raster-preview.png" alt="Raster Harita">
-          <p>🗺️ Raster Tabanlı Yangın Haritası</p>
-        </a>
-      </div>
-      <div class="map-item">
-        <a href="3d_model.html" target="_blank">
-          <img src="img/3d-preview.png" alt="3D Harita">
-          <p>🌍 3D Görselleştirme ile Yangın Haritası</p>
-        </a>
-      </div>
+    <div class="map-card">
+      <a href="mugla_red_circles.html" target="_blank">
+        <img src="img/thumb_circles.png" alt="Kırmızı Noktalar Haritası" />
+        <h3>Yangın Noktaları Haritası</h3>
+      </a>
     </div>
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2025 FİRMAP Projesi – TÜBİTAK 2209-A</p>
-  </footer>
-
-  <!-- Leaflet Harita -->
-  <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-o9N1jGD2cQv7vW8dA/bn/FO5hA1Js2gM2kMqV+38nCU="
-    crossorigin=""
-  ></script>
-  <script>
-    var map = L.map('map').setView([37.9, 29.1], 7);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 18,
-      attribution: '© OpenStreetMap katkıcıları'
-    }).addTo(map);
-    L.marker([37.0, 29.0]).addTo(map).bindPopup('📍 Muğla - Yangın Bildirimi');
-  </script>
-
-  <!-- Menü Aç/Kapat -->
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById("nav-menu");
-      nav.classList.toggle("show");
-    }
-  </script>
-</body>
-</html>
+    <div class="map-card">
+      <a href="mugla_yangin_timestamped.html" target="_blank">
+        <img src="img/thumb_timestamped.png" alt="Zaman Damgalı Harita" />
+        <h3>Zaman Etiketli Yangın Haritası</h3>
+      </a>
+    </div>
+    <div class="map-card">
+      <a href="mugla_yangin_intense_animation.html" target="_blank">
+        <img src="img/thumb_animation.png" alt="Animasyonlu Yoğunluk Haritası" />
+        <h3>Yoğunluk Haritası (Animasyonlu)</h3>
+      </a>
+    </div>
+  </div>
+</main>
