@@ -1,9 +1,19 @@
+/* 🔷 Genel Sayfa Yapısı */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #1c2b39;
+}
+
+/* 🔺 Navbar */
 .navbar {
   background-color: #1c2b39;
   padding: 20px;
   text-align: center;
 }
 
+/* 🔺 Navbar Butonları */
 .nav-buttons a {
   display: inline-block;
   background-color: #e53939;
@@ -13,10 +23,65 @@
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  font-family: Arial, sans-serif;
   transition: background-color 0.3s ease;
 }
 
 .nav-buttons a:hover {
   background-color: #c62828;
+}
+
+/* 📦 İçerik Konteyner */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* 🗺️ Harita Kartları */
+.map-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.map-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.map-card:hover {
+  transform: scale(1.03);
+}
+
+.map-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.map-card h3 {
+  margin: 15px;
+  color: #e53939;
+  font-size: 18px;
+}
+
+/* 🧭 Link Stil Reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .map-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
 }
