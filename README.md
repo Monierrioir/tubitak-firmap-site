@@ -1,143 +1,32 @@
-🔥 TÜBİTAK 2209-A Projesi: Yangın Risk Analizi ve Haritalama
-📌 Proje Hakkında
-Bu proje, TÜBİTAK 2209-A kapsamında desteklenen ve belirli bir bölgedeki yangın risklerinin analiz edilerek görselleştirilmesini amaçlayan bir çalışmadır. Projede, açık kaynaklı uydu verileri ve istatistiksel bilgiler kullanılarak bir yangın yoğunluk haritası (heatmap) oluşturulmuştur.
+# 🔥 TÜBİTAK 2209-A | Yangın Haritaları ve Bilgilendirme Sistemi
 
-Ana hedef: Erken uyarı sistemlerine katkı sağlamak ve yerel yönetimlerin afet yönetim kapasitesini güçlendirmektir.
+Bu proje, 2025 TÜBİTAK 2209-A Üniversite Öğrencileri Araştırma Projeleri Desteği kapsamında yürütülmektedir.  
+Amaç, **Muğla bölgesindeki orman yangınlarını görselleştirmek**, toplumu bilinçlendirmek ve **çocuklara özel eğitim içerikleri sunmaktır.**
 
-🔍 Kullanılan Teknolojiler
-Python (Pandas, NumPy, Folium, Matplotlib, Scikit-learn vs.)
+---
 
-Leaflet.js (harita görselleştirmesi)
+## 🌍 Proje İçeriği
 
-HTML/CSS (web arayüzü)
+- 📊 **Isı Yoğunluk Haritaları** – 2012–2022 yıllarındaki yangın dağılımı
+- 🔴 **Yangın Noktaları Haritası** – Gerçek verilerle harita temelli görselleştirme
+- ⏱️ **Zaman Etiketli Harita** – Tarih bazlı yangın gelişimi animasyonu
+- 📖 **Blog Yazıları** – Yetişkinler ve çocuklar için bilgilendirici içerikler
 
-Git/GitHub (versiyon kontrolü)
+---
 
-VS Code (geliştirme ortamı)
+## 📌 Uygulama Linki
 
-🗂️ Proje Yapısı
-bash
-Kopyala
-Düzenle
-├── data/               # Ham ve işlenmiş veri setleri
-├── notebooks/          # Veri analizi ve görselleştirme dosyaları (Jupyter)
-├── src/                # Python scriptleri (veri işleme, modelleme)
-├── web/                # Harita ve blog sayfalarını içeren HTML/CSS dosyaları
-├── README.md           # Bu döküman
-└── LICENSE             # Proje lisansı
-🚀 Kurulum ve Çalıştırma
-Bu repoyu klonlayın:
+👉 [Projeyi Canlı Görüntüle](https://monierrioir.github.io/tubitak-firmap-site/)
 
-bash
-Kopyala
-Düzenle
-git clone https://github.com/kullaniciAdi/tubitak2209a-yangin.git
-cd tubitak2209a-yangin
-Gerekli Python kütüphanelerini yükleyin:
+---
 
-bash
-Kopyala
-Düzenle
-pip install -r requirements.txt
-Jupyter defterlerini çalıştırmak için:
+## 🧩 Klasör Yapısı
 
-bash
-Kopyala
-Düzenle
-jupyter notebook
-Web arayüzünü görüntülemek için:
-
-web/index.html dosyasını bir tarayıcıda açabilirsiniz.
-
-📈 Modelleme ve Analiz
-Projede kullanılan veri kaynakları:
-
-NASA FIRMS Yangın Verisi
-
-Meteoroloji sıcaklık-nem rüzgar bilgileri
-
-Bölgesel orman haritaları
-
-Modelleme süreci:
-
-Veri Temizleme ve Normalizasyon
-
-Özellik mühendisliği
-
-Random Forest ile yangın yoğunluk tahmini
-
-Tahmin sonuçlarının harita üzerinde görselleştirilmesi
-
-🌍 Canlı Demo
-Canlı demo için: 🔗 🔥 TÜBİTAK 2209-A Projesi: Yangın Risk Analizi ve Haritalama
-📌 Proje Hakkında
-Bu proje, TÜBİTAK 2209-A kapsamında desteklenen ve belirli bir bölgedeki yangın risklerinin analiz edilerek görselleştirilmesini amaçlayan bir çalışmadır. Projede, açık kaynaklı uydu verileri ve istatistiksel bilgiler kullanılarak bir yangın yoğunluk haritası (heatmap) oluşturulmuştur.
-
-Ana hedef: Erken uyarı sistemlerine katkı sağlamak ve yerel yönetimlerin afet yönetim kapasitesini güçlendirmektir.
-
-🔍 Kullanılan Teknolojiler
-Python (Pandas, NumPy, Folium, Matplotlib, Scikit-learn vs.)
-
-Leaflet.js (harita görselleştirmesi)
-
-HTML/CSS (web arayüzü)
-
-Git/GitHub (versiyon kontrolü)
-
-VS Code (geliştirme ortamı)
-
-🗂️ Proje Yapısı
-bash
-Kopyala
-Düzenle
-├── data/               # Ham ve işlenmiş veri setleri
-├── notebooks/          # Veri analizi ve görselleştirme dosyaları (Jupyter)
-├── src/                # Python scriptleri (veri işleme, modelleme)
-├── web/                # Harita ve blog sayfalarını içeren HTML/CSS dosyaları
-├── README.md           # Bu döküman
-└── LICENSE             # Proje lisansı
-🚀 Kurulum ve Çalıştırma
-Bu repoyu klonlayın:
-
-bash
-Kopyala
-Düzenle
-git clone https://github.com/kullaniciAdi/tubitak2209a-yangin.git
-cd tubitak2209a-yangin
-Gerekli Python kütüphanelerini yükleyin:
-
-bash
-Kopyala
-Düzenle
-pip install -r requirements.txt
-Jupyter defterlerini çalıştırmak için:
-
-bash
-Kopyala
-Düzenle
-jupyter notebook
-Web arayüzünü görüntülemek için:
-
-web/index.html dosyasını bir tarayıcıda açabilirsiniz.
-
-📈 Modelleme ve Analiz
-Projede kullanılan veri kaynakları:
-
-NASA FIRMS Yangın Verisi
-
-Meteoroloji sıcaklık-nem rüzgar bilgileri
-
-Bölgesel orman haritaları
-
-Modelleme süreci:
-
-Veri Temizleme ve Normalizasyon
-
-Özellik mühendisliği
-
-Random Forest ile yangın yoğunluk tahmini
-
-Tahmin sonuçlarının harita üzerinde görselleştirilmesi
-
-🌍 Canlı Demo
-Canlı demo için: 🔗 https://monierrioir.github.io/tubitak-firmap-site
+```plaintext
+📁 img/                 → Harita ve blog görselleri
+📁 haritalar/           → HTML tabanlı interaktif harita dosyaları
+📁 bloglar/             → Her blog yazısı için özel sayfa
+📄 index.html           → Ana sayfa
+📄 hakkimizda.html      → Proje hakkında bilgiler
+📄 blog.html            → Blog yazılarını listeleyen sayfa
+📄 style.css            → Tüm site için kullanılan stil dosyası
