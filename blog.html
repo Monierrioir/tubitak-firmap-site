@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- ÜST NAVBAR -->
   <header class="navbar">
     <div class="navbar-left">
       <img src="img/tubitak-logo.png" alt="TÜBİTAK Logo" class="logo" />
@@ -21,34 +22,67 @@
     </nav>
   </header>
 
+  <!-- ANA İÇERİK -->
   <main class="container">
-    <h1>Blog</h1>
+    <h1>Blog Yazıları</h1>
     <p>Muğla’daki yangınlar, korunma yolları ve teknolojik çözüm önerilerimizi bu sayfada paylaşıyoruz.</p>
 
+    <!-- Blog 1 -->
     <section class="blog-post">
-      <h2><a href="blog1.html">📊 Muğla'da 2012–2022 Arası Orman Yangınları</a></h2>
+      <img src="img/yangin1.jpg" alt="Yangın Verileri" class="blog-cover">
+      <h2>📊 Muğla'da 2012–2022 Arası Orman Yangınları</h2>
       <p><em>5 Haziran 2025</em></p>
-      <p>Son 10 yılda Muğla’da 3.500’den fazla orman yangını meydana geldi. 2021 yazı, tarihsel bir kırılma noktası oldu.</p>
+      <p>Son 10 yılda Muğla’da 3.500’den fazla orman yangını meydana geldi. 2021 yazı, tarihsel bir kırılma noktası oldu. Proje kapsamında geliştirilen interaktif haritalarla bu veriler yorumlandı ve eksik veri analizi için yapay zekâ destekli modeller kullanıldı.</p>
     </section>
 
+    <!-- Blog 2 -->
     <section class="blog-post">
-      <h2><a href="blog2.html">🧯 Yangınlardan Nasıl Korunuruz?</a></h2>
+      <img src="img/yangin2.jpg" alt="Korunma Yöntemleri" class="blog-cover">
+      <h2>🧯 Yangınlardan Nasıl Korunuruz?</h2>
       <p><em>2 Haziran 2025</em></p>
-      <p>Yangınların %90’ı insan kaynaklı. Bu yazıda alınabilecek küçük önlemlerle büyük felaketlerin nasıl önlenebileceğini anlattık.</p>
+      <p>Yangınların %90’ı insan kaynaklı. Piknik ateşlerinin söndürülmemesi, cam şişe bırakılması gibi küçük ihlaller, büyük felaketlere yol açabiliyor. Bu yazıda ormanda alınabilecek basit ama etkili önlemleri detaylıca anlattık.</p>
     </section>
 
+    <!-- Blog 3 -->
     <section class="blog-post">
-      <h2><a href="blog3.html">🌱 Yangınlara Karşı Toplumsal Hazırlık</a></h2>
+      <img src="img/yangin3.jpg" alt="Toplumsal Hazırlık" class="blog-cover">
+      <h2>🌱 Yangınlara Karşı Toplumsal Hazırlık</h2>
       <p><em>28 Mayıs 2025</em></p>
-      <p>Afetlere karşı toplumsal bilinç ve hazırlık neden hayati? Belediyeler, gönüllüler ve gençler bu mücadelede nasıl yer alabilir?</p>
+      <p>Belediyeler, sivil toplum kuruluşları ve genç gönüllüler bu mücadelede kilit rol oynuyor. Bilinçlendirme seminerleri, erken uyarı eğitimleri ve gönüllü yangın eğitimi programları bu yazının temel konularından.</p>
+    </section>
+
+    <!-- ÇOCUKLAR İÇİN AYRI BÖLÜM -->
+    <hr style="margin-top: 60px;">
+    <h2>🧒 Çocuklar İçin Yangın ve Doğa Yazıları</h2>
+
+    <!-- Çocuk Blog 1 -->
+    <section class="blog-post" style="background-color:#fffbe6;">
+      <img src="img/yangin_cocuk1.jpg" alt="Yangın Nedir?" class="blog-cover">
+      <h3>🔥 Yangın Nedir?</h3>
+      <p>Yangın, ateşin kontrolsüz bir şekilde yayılmasıdır. Ormanda ağaçlar, çalılar ve kuru yapraklar çok kolay yanar. Bu yazıda yangının ne olduğunu basit bir dille öğrenebilirsin.</p>
+    </section>
+
+    <!-- Çocuk Blog 2 -->
+    <section class="blog-post" style="background-color:#fffbe6;">
+      <img src="img/yangin_cocuk2.jpg" alt="Ormanı Koru" class="blog-cover">
+      <h3>🌳 Ormanları Nasıl Koruruz?</h3>
+      <p>Ormanları korumak için çöplerimizi doğaya atmamalı, ateş yakmamalı ve dikkatli olmalıyız. Orman bizim evimiz gibi, öyle değil mi? Bu yazıda ormana nasıl iyi bakabileceğimizi öğreniyoruz.</p>
+    </section>
+
+    <!-- Çocuk Blog 3 -->
+    <section class="blog-post" style="background-color:#fffbe6;">
+      <img src="img/yangin_cocuk3.jpg" alt="İtfaiyeciler" class="blog-cover">
+      <h3>🧯 Kahraman İtfaiyecilerle Tanış!</h3>
+      <p>İtfaiyeciler yangınları söndüren ve doğayı koruyan cesur kişilerdir. Bu yazıda onların araçlarını, kıyafetlerini ve neler yaptıklarını birlikte keşfediyoruz!</p>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <p>&copy; 2025 FİRMAP Projesi – TÜBİTAK 2209-A</p>
   </footer>
 
-  <!-- Menü Aç/Kapat -->
+  <!-- MOBİL MENÜ -->
   <script>
     function toggleMenu() {
       const nav = document.getElementById("nav-menu");
