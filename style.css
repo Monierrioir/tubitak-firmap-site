@@ -215,6 +215,46 @@ h1 {
   color: #004080;
 }
 
+/* Modal arka plan */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* İçerik kutusu */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 0;
+  width: 90%;
+  height: 85%;
+  max-width: 1200px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Kapatma butonu */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.close:hover {
+  color: #e60000;
+}
 
 
 
