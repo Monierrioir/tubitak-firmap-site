@@ -1,25 +1,36 @@
-/* 🔷 Genel Sayfa Yapısı */
-body {
+/* 🔷 GENEL SAYFA YAPISI */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   color: #1c2b39;
+  line-height: 1.6;
 }
 
-/* 🔺 Navbar */
+/* 🔺 NAVBAR (Üst Menü) */
 .navbar {
   background-color: #1c2b39;
   padding: 20px;
   text-align: center;
 }
 
-/* 🔺 Navbar Butonları */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
 .nav-buttons a {
   display: inline-block;
   background-color: #e53939;
   color: white;
   padding: 10px 20px;
-  margin: 0 10px;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
@@ -30,14 +41,35 @@ body {
   background-color: #c62828;
 }
 
-/* 📦 İçerik Konteyner */
+/* 🔳 BAŞLIK SATIRI LOGO + YAZI */
+.header-top {
+  background-color: #1c2b39;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header-top img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+.header-top span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 📦 SAYFA KONTEYNERİ */
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 40px 20px;
 }
 
-/* 🗺️ Harita Kartları */
+/* 🗺️ HARİTA GALERİSİ */
 .map-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -49,7 +81,7 @@ body {
 .map-card {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 300px;
   text-align: center;
   overflow: hidden;
@@ -72,16 +104,25 @@ body {
   font-size: 18px;
 }
 
-/* 🧭 Link Stil Reset */
+/* 🧭 LİNK RESET */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* 📱 Responsive */
+/* 📱 RESPONSIVE */
 @media (max-width: 768px) {
+  .nav-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .map-gallery {
     flex-direction: column;
     align-items: center;
+  }
+
+  .header-top {
+    flex-direction: column;
   }
 }
