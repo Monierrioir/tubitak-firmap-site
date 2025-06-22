@@ -32,11 +32,21 @@
   </header>
 
   <!-- İçerik -->
-  <main class="container">
-    <h1>Yangın Haritaları Galerisi</h1>
-    <p>2025 TÜBİTAK 2209-A projesi kapsamında hazırlanan farklı interaktif haritaları aşağıdan inceleyebilirsiniz.</p>
+  <main class="container-with-sidebar">
+    <!-- Sol Filtre Paneli -->
+    <aside class="filter-sidebar">
+      <h3>🔍 Harita Türü</h3>
+      <button class="filter-button">🌡 Isı Haritaları</button>
+      <button class="filter-button">📍 Nokta Haritaları</button>
+      <button class="filter-button">⏳ Zaman Etiketli</button>
+      <button class="filter-button">🗺 Kabartma Harita</button>
+    </aside>
 
-    <div class="map-gallery">
+    <!-- Harita Galerisi -->
+    <section class="map-gallery">
+
+      <h1>Yangın Haritaları Galerisi</h1>
+      <p>2025 TÜBİTAK 2209-A projesi kapsamında hazırlanan farklı interaktif haritaları aşağıdan inceleyebilirsiniz.</p>
 
       <div class="map-card">
         <a href="haritalar/mugla_yangin_heatmap_2012_2022_interaktif_renkli_legend.html" class="open-map">
@@ -45,7 +55,6 @@
         </a>
         <p class="map-description">
           Bu harita, Muğla ilinde 2012-2022 yılları arasında çıkan yangınların yoğunluk dağılımını renk skalasıyla göstermektedir. Kırmızı alanlar daha sık yangın çıkan bölgeleri ifade eder.
-        
         </p>
       </div>
 
@@ -79,7 +88,7 @@
         </p>
       </div>
 
-    </div>
+    </section>
   </main>
 
   <script src="script.js"></script>
