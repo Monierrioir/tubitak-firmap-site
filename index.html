@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Navbar -->
   <header class="navbar">
     <div class="navbar-left">
       <img src="img/tubitak-logo.png" alt="TÜBİTAK Logo" class="logo">
@@ -23,51 +21,38 @@
     </nav>
   </header>
 
-  <!-- Hero Alanı -->
+
   <section class="hero">
-    <div class="hero-content">
-      <img src="img/Green_Fire.png" alt="Muğla Afet Haritası" style="max-width:100%; border-radius: 12px; margin-bottom: 20px;">
-      <h1>Uydu Verilerinden İnteraktif Yangın Haritalama Sistemi</h1>
-      <p>
-        🔥 Türkiye’de son yıllarda artış gösteren orman yangınları ciddi ekonomik ve sosyal kayıplara yol açmaktadır. Muğla ili bu konuda en riskli bölgelerden biridir.
-      </p>
-      <a href="haritalar.html" class="hero-button">Haritaları Keşfet</a>
-    </div>
-  </section>
+  <div class="hero-content">
+    <!-- Görsel -->
+    <img src="img/Green_Fire.png" alt="Muğla Afet Haritası" style="max-width:100%; border-radius: 12px; margin-bottom: 20px;">
 
-  <!-- Bilgilendirme Alanı -->
-  <section class="info-section">
-    <h2>Projemizin Temel Hedefi</h2>
+    <h1>Uydu Verilerinden İnteraktif Yangın Haritalama Sistemi</h1>
     <p>
-      Bu platform, TÜBİTAK 2209-A desteğiyle geliştirilmiş olup Muğla’daki orman yangınlarının analizini ve görselleştirilmesini amaçlar.
+      🔥 Türkiye’de son yıllarda artış gösteren orman yangınları, doğal yaşamı tehdit etmenin ötesinde; tarım, turizm ve yerleşim alanlarında ciddi ekonomik ve sosyal kayıplara yol açmaktadır. Özellikle Muğla ili, orman varlığı ve iklimsel özellikleri nedeniyle bu tehditten en çok etkilenen bölgelerin başında gelmektedir. Orman yangınlarının etkilerinin doğru bir şekilde gözlemlenebilmesi ve gelecekteki risklerin önlenebilmesi için, yüksek çözünürlüklü veriye dayalı mekânsal analizlerin geliştirilmesi büyük önem taşımaktadır.
     </p>
-    <ul>
-      <li>📍 2012–2022 uydu verilerine dayalı analiz</li>
-      <li>🌡️ Yangın sıcaklığı, yoğunluğu ve nem ilişkisi</li>
-      <li>🧭 Toplum için anlaşılır ve erişilebilir harita arayüzü</li>
-    </ul>
+
+    <p>
+      🔍 Bu proje, TÜBİTAK 2209-A desteğiyle yürütülen ve Muğla ili özelinde orman yangınlarının zamansal ve mekânsal dağılımını analiz eden bir öğrenci araştırmasıdır. Çukurova Üniversitesi Bilgisayar Mühendisliği öğrencileri tarafından geliştirilen bu web platformu, 2012–2022 yılları arasında VIIRS S-NPP 375m çözünürlüklü uydu verileri kullanılarak yangın sıcaklığı, yoğunluğu, nem gibi kritik göstergeler üzerinden analiz yapılmasını ve bu analizlerin halka açık bir web sitesi aracılığıyla görselleştirilmesini amaçlamaktadır.
+    </p>
+
+    <p>
+      🌍 Harita tabanlı bu sistem ile yalnızca bilimsel analiz değil; aynı zamanda bölge halkının ve öğrencilerin afet farkındalığı artırılmakta, kullanıcı dostu arayüzlerle bilginin sadeleştirilmiş halleri sunulmaktadır. Aynı zamanda geliştirilen zaman etiketli haritalar ile yangınların tarihsel seyri izlenebilmekte; bu sayede kamu kurumları için karar destek altyapısı da sağlanmaktadır.
+    </p>
+
+    <p>
+      📊 Platform kapsamında elde edilen veriler; istatistiksel grafiklerle zenginleştirilmiş, interaktif haritalar ile sunulmuş, hem akademik çalışmalara katkı sunacak hem de ilk ve orta öğretim seviyesinde eğitim amaçlı kullanılabilecek şekilde yapılandırılmıştır. Harita sistemi, sıcaklık-nem ilişkisi ve yangın yoğunluğu gibi unsurları bir araya getirerek yangınlara karşı erken önlem alınmasına olanak tanıyan bütüncül bir analiz ortamı sunmaktadır.
+    </p>
+
     <div class="highlight-box">
-      <strong>🎯 Vizyon:</strong> Yangınlara karşı bilimsel, hızlı ve bilinçli çözüm yolları geliştirmek.
+      <strong>🟡 Amacımız:</strong> Orman yangınlarının etkilerini en aza indirmek ve karar vericilere etkili bir planlama desteği sunmak amacıyla; yüksek çözünürlüklü uydu verilerine dayalı, etkileşimli ve sürdürülebilir bir yangın haritalama platformu geliştirmektir.
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Hızlı Erişim Kartları -->
-  <section class="quick-links">
-    <div class="card">
-      <img src="img/icon-map.png" alt="Haritalar">
-      <h3><a href="haritalar.html">Haritalar</a></h3>
-    </div>
-    <div class="card">
-      <img src="img/icon-blog.png" alt="Blog">
-      <h3><a href="blog.html">Blog</a></h3>
-    </div>
-    <div class="card">
-      <img src="img/icon-team.png" alt="Hakkımızda">
-      <h3><a href="hakkimizda.html">Takım</a></h3>
-    </div>
-  </section>
 
-  <!-- Footer -->
+
+
   <footer class="footer">
     <p>&copy; 2025 FİRMAP Projesi – TÜBİTAK 2209-A</p>
   </footer>
@@ -79,6 +64,5 @@
       nav.classList.toggle("show");
     }
   </script>
-
 </body>
 </html>
