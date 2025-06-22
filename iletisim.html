@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>İletişim | TÜBİTAK 2209-A Projesi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="img/tubitak-logo.png" alt="TÜBİTAK Logo" class="logo">
+      <span class="site-title">TÜBİTAK 2209-A Projesi</span>
+    </div>
+    <nav class="navbar-right">
+      <a href="index.html" class="nav-button">Anasayfa</a>
+      <a href="hakkimizda.html" class="nav-button">Hakkımızda</a>
+      <a href="haritalar.html" class="nav-button">Haritalar</a>
+      <a href="blog.html" class="nav-button">Blog</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Bizimle İletişime Geçin</h1>
+    <p>Her türlü görüş, öneri veya sorularınız için aşağıdaki formu doldurabilirsiniz. Size en kısa sürede geri dönüş yapılacaktır.</p>
+
+    <form action="mailto:seninmailin@example.com" method="post" enctype="text/plain" class="contact-form">
+      <label for="name">Adınız:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">E-posta Adresiniz:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mesajınız:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Gönder</button>
+    </form>
+  </main>
+
+</body>
+</html>
