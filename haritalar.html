@@ -4,10 +4,19 @@
   <meta charset="UTF-8" />
   <title>Yangın Haritaları Galerisi</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .map-description {
+      font-size: 14px;
+      color: #555;
+      margin-top: 8px;
+      padding: 0 10px;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Modern Butonlu Navbar -->
+  <!-- Navbar -->
   <header class="navbar">
     <div class="navbar-left">
       <img src="img/tubitak-logo.png" alt="TÜBİTAK Logo" class="logo">
@@ -22,35 +31,53 @@
     </nav>
   </header>
 
+  <!-- İçerik -->
   <main class="container">
     <h1>Yangın Haritaları Galerisi</h1>
     <p>2025 TÜBİTAK 2209-A projesi kapsamında hazırlanan farklı interaktif haritaları aşağıdan inceleyebilirsiniz.</p>
 
     <div class="map-gallery">
+
       <div class="map-card">
         <a href="haritalar/mugla_yangin_heatmap_2012_2022_interaktif_renkli_legend.html" class="open-map">
           <img src="img/thumb_heatmap.png" alt="Heatmap 2012–2022" />
           <h3>2012–2022 Isı Yoğunluk Haritası</h3>
         </a>
+        <p class="map-description">
+          Bu harita, Muğla ilinde 2012-2022 yılları arasında çıkan yangınların yoğunluk dağılımını renk skalasıyla göstermektedir. Kırmızı alanlar daha sık yangın çıkan bölgeleri ifade eder.
+        </p>
       </div>
+
       <div class="map-card">
         <a href="haritalar/mugla_red_circles.html" class="open-map">
           <img src="img/thumb_circles.png" alt="Kırmızı Noktalar Haritası" />
           <h3>Yangın Noktaları Haritası</h3>
         </a>
+        <p class="map-description">
+          Bu harita, Muğla genelinde belirlenen yangın olaylarını noktasal olarak işaretlemektedir. Her kırmızı daire, bir yangın olayının gerçekleştiği konumu temsil eder.
+        </p>
       </div>
+
       <div class="map-card">
         <a href="haritalar/mugla_yangin_timestamped.html" class="open-map">
           <img src="img/thumb_timestamped.png" alt="Zaman Damgalı Harita" />
           <h3>Zaman Etiketli Yangın Haritası</h3>
         </a>
+        <p class="map-description">
+          Yangın olaylarının zaman etiketleriyle gösterildiği bu harita sayesinde hangi tarihlerde yangınların daha yoğun olduğu gözlemlenebilir. Zaman bazlı analiz için uygundur.
+        </p>
       </div>
+
       <div class="map-card">
         <a href="haritalar/mugla_yangin_intense_animation.html" class="open-map">
           <img src="img/thumb_animation.png" alt="Animasyonlu Harita" />
-          <h3> Kabartma Yangın Yoğunluk Haritası</h3>
+          <h3>Kabartma Yangın Yoğunluk Haritası</h3>
         </a>
+        <p class="map-description">
+          Yangın yoğunluklarının bölgesel ve zamansal değişimini dinamik olarak gösteren animasyonlu bu harita, kullanıcıya zamanla değişen risk bölgelerini sezgisel olarak sunar.
+        </p>
       </div>
+
     </div>
   </main>
 
