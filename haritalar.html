@@ -2,6 +2,7 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yangın Haritaları Galerisi</title>
   <link rel="stylesheet" href="style.css" />
   <style>
@@ -10,7 +11,67 @@
       color: #555;
       margin-top: 8px;
       padding: 0 10px;
-      line-height: 1.5;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .map-card h3 {
+      margin: 10px 0 5px;
+      font-size: 17px;
+      color: #1d3557;
+    }
+
+    .map-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .map-card {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+      width: 320px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .map-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .map-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 16px;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .map-card {
+        width: 90%;
+      }
     }
   </style>
 </head>
@@ -38,16 +99,18 @@
 
     <div class="map-gallery">
 
+      <!-- Kart 1 -->
       <div class="map-card">
         <a href="haritalar/mugla_yangin_heatmap_2012_2022_interaktif_renkli_legend.html" class="open-map">
           <img src="img/thumb_heatmap.png" alt="Heatmap 2012–2022" />
           <h3>2012–2022 Isı Yoğunluk Haritası</h3>
         </a>
         <p class="map-description">
-          Bu harita, Muğla ilinde 2012-2022 yılları arasında çıkan yangınların yoğunluk dağılımını renk skalasıyla göstermektedir. Kırmızı alanlar daha sık yangın çıkan bölgeleri ifade eder.
+          Bu harita, Muğla ilinde 2012–2022 yılları arasında çıkan yangınların yoğunluk dağılımını renk skalasıyla göstermektedir. Kırmızı alanlar daha sık yangın çıkan bölgeleri ifade eder.
         </p>
       </div>
 
+      <!-- Kart 2 -->
       <div class="map-card">
         <a href="haritalar/mugla_red_circles.html" class="open-map">
           <img src="img/thumb_circles.png" alt="Kırmızı Noktalar Haritası" />
@@ -58,6 +121,7 @@
         </p>
       </div>
 
+      <!-- Kart 3 -->
       <div class="map-card">
         <a href="haritalar/mugla_yangin_timestamped.html" class="open-map">
           <img src="img/thumb_timestamped.png" alt="Zaman Damgalı Harita" />
@@ -68,9 +132,10 @@
         </p>
       </div>
 
+      <!-- Kart 4 -->
       <div class="map-card">
         <a href="haritalar/mugla_yangin_intense_animation.html" class="open-map">
-          <img src="img/thumb_animation.png" alt="Animasyonlu Harita" />
+          <img src="img/thumb_animation.png" alt="Kabartmalı Yoğunluk Haritası" />
           <h3>Kabartma Yangın Yoğunluk Haritası</h3>
         </a>
         <p class="map-description">
